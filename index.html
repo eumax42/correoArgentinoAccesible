@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Correo Argentino - Servicio Postal Nacional</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Skip link para navegación por teclado -->
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-content">
+                    <div class="government-branding">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 30'%3E%3Crect width='100' height='30' fill='%230066CC'/%3E%3Ctext x='50' y='18' font-family='Arial' font-size='8' fill='white' text-anchor='middle'%3EARGENTINA%3C/text%3E%3C/svg%3E" 
+                             alt="Gobierno de Argentina" class="government-logo">
+                        <span class="government-text">República Argentina</span>
+                    </div>
+                    <div class="header-actions">
+                        <button class="accessibility-btn" id="high-contrast-btn" aria-label="Activar modo alto contraste">
+                            <i class="fas fa-adjust" aria-hidden="true"></i>
+                            <span>Alto Contraste</span>
+                        </button>
+                        <button class="accessibility-btn" id="font-size-btn" aria-label="Aumentar tamaño de fuente">
+                            <i class="fas fa-text-height" aria-hidden="true"></i>
+                            <span>A+</span>
+                        </button>
+                        <a href="#accesibilidad" class="accessibility-link" aria-label="Información de accesibilidad">
+                            <i class="fas fa-universal-access" aria-hidden="true"></i>
+                            <span>Accesibilidad</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-main">
+            <div class="container">
+                <div class="header-main-content">
+                    <div class="logo-section">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60'%3E%3Crect width='200' height='60' fill='%230066CC'/%3E%3Ctext x='100' y='35' font-family='Arial' font-size='20' fill='white' text-anchor='middle' font-weight='bold'%3ECORREO ARGENTINO%3C/text%3E%3C/svg%3E" 
+                             alt="Correo Argentino - Servicio Postal Nacional" class="main-logo">
+                        <div class="logo-text">
+                            <h1 class="site-title">Correo Argentino</h1>
+                            <p class="site-subtitle">Servicio Postal Nacional</p>
+                        </div>
+                    </div>
+                    
+                    <div class="header-tools">
+                        <div class="search-box">
+                            <form role="search" aria-label="Buscar en el sitio">
+                                <input type="text" placeholder="Buscar trámites, servicios..." aria-label="Texto a buscar">
+                                <button type="submit" aria-label="Buscar">
+                                    <i class="fas fa-search" aria-hidden="true"></i>
+                                </button>
+                            </form>
+                        </div>
+                        <div class="user-actions">
+                            <a href="#mi-correo" class="btn btn-outline">
+                                <i class="fas fa-user" aria-hidden="true"></i>
+                                Mi Correo
+                            </a>
+                            <a href="#sucursales" class="btn btn-primary">
+                                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                                Sucursales
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navegación principal -->
+    <nav class="main-navigation" aria-label="Navegación principal">
+        <div class="container">
+            <ul class="nav-menu" role="menubar">
+                <li class="nav-item" role="none">
+                    <a href="#inicio" class="nav-link" role="menuitem">
+                        <i class="fas fa-home" aria-hidden="true"></i>
+                        Inicio
+                    </a>
+                </li>
+                <li class="nav-item has-dropdown" role="none">
+                    <button class="nav-link dropdown-toggle" aria-expanded="false" aria-haspopup="true" role="menuitem">
+                        <i class="fas fa-shipping-fast" aria-hidden="true"></i>
+                        Envíos
+                        <i class="fas fa-chevron-down dropdown-icon" aria-hidden="true"></i>
+                    </button>
+                    <ul class="dropdown-menu" role="menu" aria-label="Submenú de envíos">
+                        <li role="none"><a href="#envio-nacional" role="menuitem">Envío Nacional</a></li>
+                        <li role="none"><a href="#envio-internacional" role="menuitem">Envío Internacional</a></li>
+                        <li role="none"><a href="#seguimiento" role="menuitem">Seguimiento</a></li>
+                        <li role="none"><a href="#tarifas" role="menuitem">Tarifas y Tiempos</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item has-dropdown" role="none">
+                    <button class="nav-link dropdown-toggle" aria-expanded="false" aria-haspopup="true" role="menuitem">
+                        <i class="fas fa-box" aria-hidden="true"></i>
+                        Paquetería
+                        <i class="fas fa-chevron-down dropdown-icon" aria-hidden="true"></i>
+                    </button>
+                    <ul class="dropdown-menu" role="menu" aria-label="Submenú de paquetería">
+                        <li role="none"><a href="#paquetes" role="menuitem">Envío de Paquetes</a></li>
+                        <li role="none"><a href="#embalaje" role="menuitem">Embalaje</a></li>
+                        <li role="none"><a href="#seguro" role="menuitem">Seguro de Envío</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item" role="none">
+                    <a href="#rastreo" class="nav-link" role="menuitem">
+                        <i class="fas fa-search-location" aria-hidden="true"></i>
+                        Rastreo
+                    </a>
+                </li>
+                <li class="nav-item" role="none">
+                    <a href="#sucursales" class="nav-link" role="menuitem">
+                        <i class="fas fa-store" aria-hidden="true"></i>
+                        Sucursales
+                    </a>
+                </li>
+                <li class="nav-item" role="none">
+                    <a href="#atencion" class="nav-link" role="menuitem">
+                        <i class="fas fa-headset" aria-hidden="true"></i>
+                        Atención al Cliente
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main id="main-content" role="main">
+        <!-- Carrusel Hero -->
+        <section class="hero-carousel" aria-label="Carrusel de servicios principales">
+            <div class="carousel-container">
+                <div class="carousel-track" aria-live="polite">
+                    <div class="carousel-slide active" role="group" aria-label="Slide 1 de 3: Rastreo de envíos">
+                        <div class="slide-background">
+                            <div class="slide-content">
+                                <div class="slide-badge">Nuevo</div>
+                                <h2 class="slide-title">Rastreo en Tiempo Real</h2>
+                                <p class="slide-description">Seguí tu envío en cada etapa del camino. Notificaciones instantáneas y actualizaciones en vivo.</p>
+                                <div class="slide-actions">
+                                    <a href="#rastreo" class="btn btn-light">Rastrear Envío</a>
+                                    <a href="#app" class="btn btn-outline-light">Descargar App</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-slide" role="group" aria-label="Slide 2 de 3: Envíos internacionales">
+                        <div class="slide-background">
+                            <div class="slide-content">
+                                <div class="slide-badge">Internacional</div>
+                                <h2 class="slide-title">Envíos a Todo el Mundo</h2>
+                                <p class="slide-description">Llegá a más de 190 países con nuestros servicios internacionales. Tarifas competitivas y entregas confiables.</p>
+                                <div class="slide-actions">
+                                    <a href="#internacional" class="btn btn-light">Enviar al Exterior</a>
+                                    <a href="#tarifas" class="btn btn-outline-light">Ver Tarifas</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-slide" role="group" aria-label="Slide 3 de 3: Sucursales digitales">
+                        <div class="slide-background">
+                            <div class="slide-content">
+                                <div class="slide-badge">Digital</div>
+                                <h2 class="slide-title">Servicios 100% Digitales</h2>
+                                <p class="slide-description">Realizá tus trámites postales online. Sin filas, sin esperas, desde la comodidad de tu casa.</p>
+                                <div class="slide-actions">
+                                    <a href="#digital" class="btn btn-light">Servicios Digitales</a>
+                                    <a href="#turnos" class="btn btn-outline-light">Turnos Web</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="carousel-control prev" aria-label="Slide anterior">
+                    <i class="fas fa-chevron-left" aria-hidden="true"></i>
+                </button>
+                <button class="carousel-control next" aria-label="Slide siguiente">
+                    <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                </button>
+                
+                <div class="carousel-indicators" role="tablist">
+                    <button class="indicator active" role="tab" aria-selected="true" aria-label="Ir al slide 1"></button>
+                    <button class="indicator" role="tab" aria-selected="false" aria-label="Ir al slide 2"></button>
+                    <button class="indicator" role="tab" aria-selected="false" aria-label="Ir al slide 3"></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Servicios Rápidos -->
+        <section class="quick-services" aria-labelledby="quick-services-title">
+            <div class="container">
+                <h2 id="quick-services-title" class="section-title">Servicios Postales Rápidos</h2>
+                <div class="services-grid">
+                    <article class="service-card" tabindex="0">
+                        <div class="service-icon">
+                            <i class="fas fa-search-location" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="service-title">Rastrear Envío</h3>
+                        <p class="service-description">Seguí tu envío en tiempo real con número de tracking</p>
+                        <a href="#rastreo" class="service-link" aria-label="Rastrear envío postal">Rastrear</a>
+                    </article>
+                    
+                    <article class="service-card" tabindex="0">
+                        <div class="service-icon">
+                            <i class="fas fa-calculator" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="service-title">Calcular Envío</h3>
+                        <p class="service-description">Calculá el costo de tu envío nacional e internacional</p>
+                        <a href="#calcular" class="service-link" aria-label="Calcular costo de envío">Calcular</a>
+                    </article>
+                    
+                    <article class="service-card" tabindex="0">
+                        <div class="service-icon">
+                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="service-title">Buscar Sucursal</h3>
+                        <p class="service-description">Encontrá la sucursal más cercana a tu ubicación</p>
+                        <a href="#sucursales" class="service-link" aria-label="Buscar sucursal de Correo Argentino">Buscar</a>
+                    </article>
+                    
+                    <article class="service-card" tabindex="0">
+                        <div class="service-icon">
+                            <i class="fas fa-truck-pickup" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="service-title">Retiro a Domicilio</h3>
+                        <p class="service-description">Solicitá el retiro de tu envío en tu domicilio</p>
+                        <a href="#retiro" class="service-link" aria-label="Solicitar retiro a domicilio">Solicitar</a>
+                    </article>
+                    
+                    <article class="service-card" tabindex="0">
+                        <div class="service-icon">
+                            <i class="fas fa-passport" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="service-title">Pasaporte</h3>
+                        <p class="service-description">Información y turnos para trámite de pasaporte</p>
+                        <a href="#pasaporte" class="service-link" aria-label="Información sobre pasaporte">Información</a>
+                    </article>
+                    
+                    <article class="service-card" tabindex="0">
+                        <div class="service-icon">
+                            <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="service-title">Atención al Cliente</h3>
+                        <p class="service-description">Consultas, reclamos y asistencia personalizada</p>
+                        <a href="#atencion" class="service-link" aria-label="Contactar atención al cliente">Contactar</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Rastreo -->
+        <section class="tracking-section" aria-labelledby="tracking-title">
+            <div class="container">
+                <div class="tracking-container">
+                    <div class="tracking-content">
+                        <h2 id="tracking-title" class="section-title">Rastreo de Envíos</h2>
+                        <p class="tracking-description">Ingresá tu número de tracking para seguir el estado de tu envío en tiempo real.</p>
+                        
+                        <div class="tracking-features">
+                            <div class="feature">
+                                <i class="fas fa-shipping-fast" aria-hidden="true"></i>
+                                <span>Tiempo Real</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-bell" aria-hidden="true"></i>
+                                <span>Notificaciones</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-map-marked-alt" aria-hidden="true"></i>
+                                <span>Ubicación Exacta</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-history" aria-hidden="true"></i>
+                                <span>Historial Completo</span>
+                            </div>
+                        </div>
+                        
+                        <form class="tracking-form" id="tracking-form" aria-labelledby="tracking-title">
+                            <div class="form-group">
+                                <label for="tracking-number" class="required">Número de Tracking</label>
+                                <input type="text" id="tracking-number" name="tracking-number" 
+                                       placeholder="Ej: RA123456789AR"
+                                       aria-required="true" required
+                                       aria-describedby="tracking-help"
+                                       pattern="[A-Za-z0-9]{13}"
+                                       maxlength="13">
+                                <span id="tracking-help" class="help-text">Ingresá tu número de tracking de 13 caracteres</span>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-large">
+                                <i class="fas fa-search" aria-hidden="true"></i>
+                                Rastrear Envío
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <div class="tracking-preview">
+                        <div class="preview-card">
+                            <div class="preview-header">
+                                <h3>Estado del Envío</h3>
+                                <div class="preview-badge">Vista Previa</div>
+                            </div>
+                            <div class="preview-content">
+                                <div class="tracking-timeline">
+                                    <div class="timeline-item completed">
+                                        <div class="timeline-marker"></div>
+                                        <div class="timeline-content">
+                                            <span class="timeline-status">Envío recibido</span>
+                                            <span class="timeline-date">15 Ene, 10:30</span>
+                                            <span class="timeline-location">Sucursal Central</span>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item completed">
+                                        <div class="timeline-marker"></div>
+                                        <div class="timeline-content">
+                                            <span class="timeline-status">En proceso de clasificación</span>
+                                            <span class="timeline-date">15 Ene, 14:15</span>
+                                            <span class="timeline-location">Centro de Distribución</span>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item active">
+                                        <div class="timeline-marker"></div>
+                                        <div class="timeline-content">
+                                            <span class="timeline-status">En tránsito</span>
+                                            <span class="timeline-date">16 Ene, 08:45</span>
+                                            <span class="timeline-location">Hacia destino final</span>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-item">
+                                        <div class="timeline-marker"></div>
+                                        <div class="timeline-content">
+                                            <span class="timeline-status">Entregado</span>
+                                            <span class="timeline-date">Próximamente</span>
+                                            <span class="timeline-location">Sucursal destino</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tracking-summary">
+                                    <div class="summary-item">
+                                        <span class="summary-label">Número de Tracking:</span>
+                                        <span class="summary-value">[Ingresá tu número]</span>
+                                    </div>
+                                    <div class="summary-item">
+                                        <span class="summary-label">Estado Actual:</span>
+                                        <span class="summary-value status-in-transit">En tránsito</span>
+                                    </div>
+                                    <div class="summary-item">
+                                        <span class="summary-label">Fecha Estimada de Entrega:</span>
+                                        <span class="summary-value">[Por calcular]</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Calculadora de Envíos -->
+        <section class="calculator-section" aria-labelledby="calculator-title">
+            <div class="container">
+                <h2 id="calculator-title" class="section-title">Calculadora de Envíos</h2>
+                <div class="calculator-container">
+                    <form class="calculator-form" id="calculator-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="origen" class="required">Origen</label>
+                                <select id="origen" name="origen" required>
+                                    <option value="">Seleccioná provincia</option>
+                                    <option value="CABA">Ciudad de Buenos Aires</option>
+                                    <option value="BA">Buenos Aires</option>
+                                    <option value="CBA">Córdoba</option>
+                                    <option value="SF">Santa Fe</option>
+                                    <option value="MZA">Mendoza</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="destino" class="required">Destino</label>
+                                <select id="destino" name="destino" required>
+                                    <option value="">Seleccioná provincia</option>
+                                    <option value="CABA">Ciudad de Buenos Aires</option>
+                                    <option value="BA">Buenos Aires</option>
+                                    <option value="CBA">Córdoba</option>
+                                    <option value="SF">Santa Fe</option>
+                                    <option value="MZA">Mendoza</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="peso" class="required">Peso (kg)</label>
+                                <input type="number" id="peso" name="peso" min="0.1" max="30" step="0.1" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="tipo-envio">Tipo de Envío</label>
+                                <select id="tipo-envio" name="tipo-envio">
+                                    <option value="estandar">Estándar</option>
+                                    <option value="express">Express</option>
+                                    <option value="prioritario">Prioritario</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="seguro" id="seguro">
+                                <span>Incluir seguro de envío (+$500)</span>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-large">
+                            <i class="fas fa-calculator" aria-hidden="true"></i>
+                            Calcular Costo
+                        </button>
+                    </form>
+                    
+                    <div class="calculator-result" id="calculator-result" aria-live="polite">
+                        <div class="result-placeholder">
+                            <i class="fas fa-calculator" aria-hidden="true"></i>
+                            <p>Los resultados aparecerán aquí</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Noticias y Novedades -->
+        <section class="news-section" aria-labelledby="news-title">
+            <div class="container">
+                <h2 id="news-title" class="section-title">Novedades y Avisos</h2>
+                <div class="news-grid">
+                    <article class="news-card">
+                        <div class="news-image">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 250'%3E%3Crect width='400' height='250' fill='%230066CC'/%3E%3Ctext x='200' y='125' font-family='Arial' font-size='16' fill='white' text-anchor='middle'%3EFeriados 2024%3C/text%3E%3C/svg%3E" 
+                                 alt="Calendario de feriados y horarios especiales">
+                        </div>
+                        <div class="news-content">
+                            <time datetime="2024-01-15" class="news-date">15 de Enero, 2024</time>
+                            <h3 class="news-card-title">Horarios de Feriados 2024</h3>
+                            <p class="news-excerpt">Conocé los horarios especiales de atención durante los feriados nacionales del año 2024.</p>
+                            <a href="#noticia-completa" class="news-link">Leer más</a>
+                        </div>
+                    </article>
+                    
+                    <article class="news-card">
+                        <div class="news-image">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 250'%3E%3Crect width='400' height='250' fill='%23009933'/%3E%3Ctext x='200' y='125' font-family='Arial' font-size='16' fill='white' text-anchor='middle'%3ENueva App%3C/text%3E%3C/svg%3E" 
+                                 alt="Nueva aplicación móvil de Correo Argentino">
+                        </div>
+                        <div class="news-content">
+                            <time datetime="2024-01-10" class="news-date">10 de Enero, 2024</time>
+                            <h3 class="news-card-title">Nueva App Móvil</h3>
+                            <p class="news-excerpt">Descargá nuestra nueva aplicación con funciones mejoradas de rastreo y notificaciones.</p>
+                            <a href="#noticia-completa" class="news-link">Leer más</a>
+                        </div>
+                    </article>
+                    
+                    <article class="news-card">
+                        <div class="news-image">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 250'%3E%3Crect width='400' height='250' fill='%23FF6600'/%3E%3Ctext x='200' y='125' font-family='Arial' font-size='16' fill='white' text-anchor='middle'%3ETarifas Actualizadas%3C/text%3E%3C/svg%3E" 
+                                 alt="Nuevas tarifas de envíos nacionales e internacionales">
+                        </div>
+                        <div class="news-content">
+                            <time datetime="2024-01-05" class="news-date">5 de Enero, 2024</time>
+                            <h3 class="news-card-title">Tarifas 2024 Actualizadas</h3>
+                            <p class="news-excerpt">Nuevas tarifas vigentes para envíos nacionales e internacionales a partir de enero 2024.</p>
+                            <a href="#noticia-completa" class="news-link">Leer más</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Accesibilidad Section -->
+        <section id="accesibilidad" class="accessibility-section" aria-labelledby="accessibility-title">
+            <div class="container">
+                <h2 id="accessibility-title" class="section-title">Accesibilidad</h2>
+                <div class="accessibility-content">
+                    <div class="accessibility-info">
+                        <h3>Compromiso con la Inclusión</h3>
+                        <p>En Correo Argentino nos comprometemos a que todas las personas puedan acceder a nuestros servicios postales de manera simple y segura, independientemente de sus capacidades.</p>
+                        
+                        <div class="accessibility-features">
+                            <div class="acc-feature">
+                                <i class="fas fa-eye" aria-hidden="true"></i>
+                                <h4>Alto Contraste</h4>
+                                <p>Modo de visualización para personas con baja visión</p>
+                            </div>
+                            <div class="acc-feature">
+                                <i class="fas fa-text-height" aria-hidden="true"></i>
+                                <h4>Tamaño de Texto</h4>
+                                <p>Control del tamaño de fuente para mejor legibilidad</p>
+                            </div>
+                            <div class="acc-feature">
+                                <i class="fas fa-keyboard" aria-hidden="true"></i>
+                                <h4>Navegación por Teclado</h4>
+                                <p>Acceso completo sin necesidad de mouse</p>
+                            </div>
+                            <div class="acc-feature">
+                                <i class="fas fa-assistive-listening-systems" aria-hidden="true"></i>
+                                <h4>Lectores de Pantalla</h4>
+                                <p>Compatible con NVDA, JAWS, VoiceOver y otros</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-section">
+                        <h3 class="footer-title">Contacto</h3>
+                        <ul class="footer-links">
+                            <li>
+                                <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                                <a href="tel:0800-222-0011">0800-222-CORREO (267736)</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
+                                <a href="mailto:consultas@correoargentino.com.ar">consultas@correoargentino.com.ar</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                                <a href="#sucursales">Sucursales y Horarios</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h3 class="footer-title">Servicios</h3>
+                        <ul class="footer-links">
+                            <li><a href="#envio-nacional">Envío Nacional</a></li>
+                            <li><a href="#envio-internacional">Envío Internacional</a></li>
+                            <li><a href="#paquetes">Paquetería</a></li>
+                            <li><a href="#rastreo">Rastreo</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h3 class="footer-title">Atención al Cliente</h3>
+                        <ul class="footer-links">
+                            <li><a href="#reclamos">Libro de Quejas</a></li>
+                            <li><a href="#preguntas-frecuentes">Preguntas Frecuentes</a></li>
+                            <li><a href="#terminos">Términos y Condiciones</a></li>
+                            <li><a href="#privacidad">Política de Privacidad</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h3 class="footer-title">Empresa</h3>
+                        <ul class="footer-links">
+                            <li><a href="#institucional">Institucional</a></li>
+                            <li><a href="#trabajar">Trabajá con Nosotros</a></li>
+                            <li><a href="#prensa">Prensa</a></li>
+                            <li><a href="#accesibilidad">Accesibilidad</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <div class="footer-copyright">
+                        <p>&copy; 2024 Correo Argentino - Servicio Postal Nacional. Todos los derechos reservados.</p>
+                    </div>
+                    <div class="footer-government">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 30'%3E%3Crect width='100' height='30' fill='%230066CC'/%3E%3Ctext x='50' y='18' font-family='Arial' font-size='8' fill='white' text-anchor='middle'%3EARGENTINA%3C/text%3E%3C/svg%3E" 
+                             alt="Gobierno de Argentina" class="footer-government-logo">
+                        <span>República Argentina</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
